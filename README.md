@@ -23,17 +23,17 @@ Overall Mean = (65 + 70 + 75 + ... + 53) / 20 = 67.6
 ## 4. ANOVA Calculations
 
 ### Total Sum of Squares (SST)
-SST = Σ(Xi - X̄)^2 = 5945.2
+SST = Σ(Xi - X̄)² = 5945.2
 
 ### Between-Group Sum of Squares (SSB)
-SSB = Σ nj (X̄j - X̄)^2  
+SSB = Σ nj (X̄j - X̄)²  
 - Group A: SSB_A = 40.32  
 - Group B: SSB_B = 1940.26  
 - Group C: SSB_C = 761.34  
 SSB = 40.32 + 1940.26 + 761.34 = 2741.92
 
 ### Within-Group Sum of Squares (SSW)
-SSW = Σ Σ (Xij - X̄j)^2  
+SSW = Σ Σ (Xij - X̄j)²  
 - Group A: SSW_A = 64  
 - Group B: SSW_B = 204.86  
 - Group C: SSW_C = 198.67  
