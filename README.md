@@ -1,4 +1,3 @@
-
 # One-Way ANOVA Analysis
 
 This README outlines the process and calculations for performing a one-way ANOVA to test the differences in mean scores across three groups (A, B, C).
@@ -19,38 +18,26 @@ We aim to determine if there are significant differences in the mean scores amon
 | C      | 50, 55, 60, 58, 62, 53     | 56.33       |
 
 ### Overall Mean (X̄):
-\(
-ar{X} = rac{65 + 70 + 75 + \ldots + 53}{20} = 67.6
-\)
+Overall Mean = (65 + 70 + 75 + ... + 53) / 20 = 67.6
 
 ## 4. ANOVA Calculations
 
 ### Total Sum of Squares (SST)
-\(
-SST = \sum_{i=1}^N (X_i - ar{X})^2 = 5945.2
-\)
+SST = Σ(Xi - X̄)² = 5945.2
 
 ### Between-Group Sum of Squares (SSB)
-\(
-SSB = \sum_{j=1}^k n_j (ar{X}_j - ar{X})^2
-\)
+SSB = Σ nj (X̄j - X̄)²  
 - Group A: SSB_A = 40.32  
 - Group B: SSB_B = 1940.26  
 - Group C: SSB_C = 761.34  
-\(
 SSB = 40.32 + 1940.26 + 761.34 = 2741.92
-\)
 
 ### Within-Group Sum of Squares (SSW)
-\(
-SSW = \sum_{j=1}^k \sum_{i=1}^{n_j} (X_{ij} - ar{X}_j)^2
-\)
+SSW = Σ Σ (Xij - X̄j)²  
 - Group A: SSW_A = 64  
 - Group B: SSW_B = 204.86  
 - Group C: SSW_C = 198.67  
-\(
 SSW = 64 + 204.86 + 198.67 = 467.53
-\)
 
 ## 5. Degrees of Freedom
 - Total: DF_total = N - 1 = 19  
@@ -62,17 +49,12 @@ SSW = 64 + 204.86 + 198.67 = 467.53
 - Within Groups: MSW = SSW / DF_within = 27.50  
 
 ## 7. F-Statistic
-\(
-F = rac{MSB}{MSW} = rac{1370.96}{27.50} = 49.85
-\)
+F = MSB / MSW = 1370.96 / 27.50 = 49.85
 
 ## 8. P-Value
 Using an F-distribution table with DF_between = 2 and DF_within = 17:  
-\(
-p pprox 4.5 	imes 10^{-9}
-\)
+p ≈ 4.5 × 10^(-9)
 
 ## 9. Conclusion
 Since p < 0.05, we reject the null hypothesis.  
 **Interpretation:** At least one group has a significantly different mean score.
-
